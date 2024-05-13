@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags em HTML</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body{
+            background-color: #fbfbfd;
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+
+
+        .cabeça{
+            margin-top: -3vh;
+            padding-top: 1vh;
+            background-color: #334;
+            color: #fff;
+            font-size: 20px;
+            
+        }
+        .cabeça h1{
+            margin: 2vh;
+            color: #fff;
+        }
+
+        .cabeça > p, h1, h3{
+            padding: 10px;
+            text-align: center;
+        }
+
+        em{
+            margin-top: 30px;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            background-color: #c6e6b3;
+        }
+        .imagem{
+            margin-top: -10px;
+            background-color: rgb(112, 112, 155);
+            font-size: 4rem;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0px 25px 70px #000000;
+            padding: 5px;
+            border-radius: 15px;
+        }
+        p{
+            padding: 1vh;
+        }
+        footer{
+            margin-top: 10vh;
+            text-align: center;
+        }
+        section{
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            background-color: rgb(215, 227, 249);
+            box-shadow: 0 0 10px rgb(132, 174, 218);
+        }
+        h1, h2, h3, h4, h5, h6{
+            text-align: center;
+            color: #0c7f0c;
+        }
+      
+    </style>
+</head>
+<body>
+    <header class="cabeça">
+        <h1>Tags</h1>
+        <h3>Elementos Basicos do HTML</h3>
+        <p>&lt;DOCTYPE&gt;  &lt;html lang="pt"&gt;  &lt;head&gt;  &lt;body&gt;  &lt;title&gt;  &lt;hr&gt;  &lt;br&gt;  &lt;p&gt;  &lt; !-- -- &gt;  &lt;h1&gt;  &lt;h2&gt;  &lt;h3&gt;  &lt;h4&gt;  &lt;h5&gt;  &lt;h6&gt;  </p>
+    </header>
+
+    <div class="imagem"><p>&lt;/&gt;</p></div>
+  
+    <section>
+        <p><em>&lt;DOCTYPE&gt;</em><b>: Declara o tipo de Documento do HTML5</b></p>
+        <p>Exemplo: &lt;!DOCTYPE html&gt;</p>
+    </section>
+
+    <section>
+        <p><em>&lt;html lang="pt"&gt;</em><b>: Define o Idioma da Pagina HTML</b></p>
+        <p>&lt;html lang="pt"&gt;</p>
+    </section>
+
+    <section>
+        <p><em>&lt;head&gt;</em><b>:</b> Cabeça do HTML, tudo que ficara invisivel ao usuario, aqui vai varios elementos como, <b>title, style, main, etc</b> entre varios outros como elementos do JavaScript e CSS</p>
+        <p>&lt;head&gt; Conteudo vai aqui dentro &lt;/head&gt;</p>
+    </section>
+
+    <section>
+        <p><em>&lt;body&gt;</em><b>: Corpo do HTML, </b>aqui ficara tudo que sera visivel para o usuario final, corpo completo da pagina</p>
+        <p>&lt;body&gt; Conteudo Da Pagina Aqui detro &lt;/body&gt;</p>
+    </section>
+
+    <section>
+        <p><em>&lt;title&gt;</em><b>: Define o Titulo principal da Pagina</b></p>
+        <p>&lt;title&gt; Pagina principal &lt;/title&gt;</p>
+    </section>
+
+    <section>
+        <p><em>&lt;ht&gt;</em><b>: Inserção de Linha Horizontal na pagina</b> Não Possue fechamento</p>
+        <p>&lt;hr&gt; <hr></p>
+    </section>
+
+    <section>
+        <p><em>&lt;br&gt;</em><b>: Quebra de Linha</b> Inseri uma quebra de linha</p>
+        <p>&lt;br&gt; <br></p>
+        <p>Quebra no Meio e embaixo</p>
+        <br>
+    </section>
+
+    <section>
+        <p><em>&lt;p&gt;</em><b>: Tag para Paragrafos e textos</b></p>
+        <p>Isso e um Paragrafo texto</p>
+    </section>
+
+    <section>
+        <p><em>&lt;h1&gt;</em><b>: Tag para Cebeçalho de Maior importancia</b></p>
+        <h1>Isso e Um Cabeçalho com (h1)</h1>
+    </section>
+
+    <section>
+        <p><em>&lt;h2&gt;</em><b>: Tag para Cabeçalho de Grande importancia</b> </p>
+        <h2>Sou um cabeçalho com (h2)</h2>
+    </section>
+
+    <section>
+        <p><em>&lt;h3&gt;</em><b>: Tag para Cabeçalho de Media Importancia</b> </p>
+        <h3>Sou um cabeçalho com (h3)</h3>
+    </section>
+
+    <section>
+        <p><em>&lt;h4&gt;</em><b>: Tag para Cabeçalho baixa importancia</b> </p>
+        <h4>Sou um cabeçalho com (h4)</h4>
+    </section>
+
+    <section>
+        <p><em>&lt;h5&gt;</em><b>: Tag para Cabeçalho baixa importancia</b> </p>
+        <h5>Sou um cabeçalho com (h5)</h5>
+    </section>
+
+    <section>
+        <p><em>&lt;h6&gt;</em><b>: Tag para Cabeçalho pouca ou nenhuma importancia</b> </p>
+        <h6>Sou um cabeçalho com (h6)</h6>
+    </section>
+
+
+    <footer>
+        &copy; 05/2024 Elementos de Formatações do HTML
+    </footer>
+
+</body>
+</html>
