@@ -91,47 +91,83 @@
     <div class="imagem"><p>&lt;/&gt;</p></div>
   
     <section>
-        <p><em>&lt;s&gt;</em><b>: </b> </p>
+        <p><em>&lt;s&gt;</em><b>: Demarcação de textos, incorretos, inprecisos ou irrelevantes</b></p>
+        <s>Este texto esta incorreto, inpreciso</s>
     </section>
 
     <section>
-        <p><em>&lt;samp&gt;</em><b>: </b> </p>
+        <p><em>&lt;samp&gt;</em><b>: Define trechos de textos emitidos por programas</b> Formata com fonte monoespaçada, boa semantica</p>
+        <samp>Este testo Foi Formatado com a Tag Samp</samp>
     </section>
 
     <section>
-        <p><em>&lt;small&gt;</em><b>: </b> </p>
+        <p><em>&lt;small&gt;</em><b>: Define textos com tamanhos reduzidos</b> Formata com texto menor em relação ao texto original</p>
+        <h1>Este Teste esta em h1, <small>Aqui tem um small dentro do h1</small></h1>
     </section>
 
     <section>
-        <p><em>&lt;strong&gt;</em><b>: </b> </p>
+        <p><em>&lt;strong&gt;</em><b>: Texto com alto grau de importancia</b> Funciona igual a tag (b) so que com grande semantica e peso</p>
+        <p>Da vida não levo nada, <strong>Da vida eu conquisto tudo</strong></p>
     </section>
 
     <section>
-        <p><em>&lt;sub&gt;</em><b>: </b> </p>
+        <p><em>&lt;sub&gt;</em><b>: Texto subescript: Embaixo</b> Subescreve um texto acima</p>
+        <p>A Formula da Agua H<sub>2</sub>O</p>
+        <p>Fazemos<sub>2</sub></p>
+        <p>F<sub>a</sub>Z<sub>e</sub>n<sub>d</sub>a</p>
     </section>
 
     <section>
-        <p><em>&lt;sup&gt;</em><b>: </b> </p>
+        <p><em>&lt;sup&gt;</em><b>: Texto Supescrito: Emcima</b> SupEscreve o texto acima</p>
+        <p>O Calculo de: 10 x 5<sup>2</sup> = 250</p>
+        <p>Meu Primeiro nome e Francisco<sup>Douglas</sup></p>
     </section>
 
     <section>
-        <p><em>&lt;template&gt;</em><b>: </b> </p>
+        <p><em>&lt;template&gt;</em><b>: Tag de conteudo estrutural oculto</b> </p>
+        <p>
+            Aqui dentro tem um template com varias tags
+            <template>
+                <h1>{{ Nome }}</h1>
+                <h2>Objetivo</h2>
+                <p>{{ Objetivo }}</p>
+                <hr>
+                <h2>Qualificação profissional</h2>
+                <p>{{ Qualificacao }}</p>
+                <hr>
+                <h2>Histórico profissional</h2>
+                <p>{{ Histórico profissional }}</p>
+                <hr>
+                <h2>Formação acadêmica</h2>
+                <p>{{ Formação acadêmica }}</p>
+            </template>
+        </p>
     </section>
 
     <section>
-        <p><em>&lt;time&gt;</em><b>: </b> </p>
+        <p><em>&lt;time&gt;</em><b>: Tag para adiciona marcações de tempo</b></p>
+        <p>A cerimônia de posse do presidente
+            Artigo publicado em
+            <time datetime="2024-01-05" pubdate>2024-05-16 as 10:00 Horas da manhã</time>
+        </p>
     </section>
 
     <section>
-        <p><em>&lt;u&gt;</em><b>: </b> </p>
+        <p><em>&lt;u&gt;</em><b>: Erros ortograficos, underline</b> Rederiza com underline</p>
+        <u>Este texto tem um underline</u>
     </section>
 
     <section>
-        <p><em>&lt;var&gt;</em><b>: </b> </p>
+        <p><em>&lt;var&gt;</em><b>: Indica a representação de uma variavel </b> Renderiza em italico</p>
+        <var>Esse texto e uma variavel</var>
+        <p>
+            Equação de primeiro grau: 2 x + 5 = 9 <var> </var>
+        </p>
     </section>
 
     <section>
-        <p><em>&lt;wbr&gt;</em><b>: </b> </p>
+        <p><em>&lt;wbr&gt;</em><b>: Quebra de Palavras</b> </p>
+        <p>Lorem ipsum dolor <wbr> sit amet consectetur adipisicing elit. Nesciunt dolorem beatae ducimus modi tempore, laborum natus <wbr> nam, tenetur molestias nemo similique voluptatem illo fugiat nisi ut laboriosam, possimus nobis.</p>
     </section>
 
 
