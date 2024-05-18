@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt, eng, es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,6 +68,10 @@
             background-color: rgb(215, 227, 249);
             box-shadow: 0 0 10px rgb(132, 174, 218);
         }
+        input{
+            width: 50%;
+            height: 30px;
+        }
       
     </style>
 </head>
@@ -109,9 +113,10 @@
 
     <section>
         <p><em>&lt;inupt type="text"&gt;</em> input para palavras textos</p>
+        <label for="texto-nome">Texto Nome:</label>
         <input 
         type="text" 
-        id="text" 
+        id="texto-nome" 
         name="texto" 
         placeholder="Digite aqui"
         value="Atributo do valor no momento, subscrevo o placeholder"
@@ -129,6 +134,7 @@
 
     <section>
         <p><em>&lt;input type="email"&gt;</em> Input para emails</p>
+        <label for="email">Email:</label>
         <input 
         type="email" 
         id="email" 
@@ -244,23 +250,105 @@
     </section>
 
     <section>
-        <p><em>&lt; &gt;</em></p>
+        <p><em>&lt;input type="time"&gt;</em> Utilizado para horarios</p>
+        <input type="time" name="hora" id="hora"
+        required>
     </section>
 
     <section>
-        <p><em>&lt; &gt;</em></p>
+        <p><em>&lt;input type="datetime-local"&gt;</em> Horario e Localizacao</p>
+        <input type="datetime-local" name="local" id="local"
+        required>
     </section>
 
     <section>
-        <p><em>&lt; &gt;</em></p>
+        <p><em>&lt;label for="idade"&gt;</em>Utilizando o Label com o input</p>
+        <label for="nome">Nome:</label><br>
+        <input type="text" name="nome" id="nome" placeholder="Digite o nome">
+
+        <br>
+        <label for="idade">Idade:</label><br>
+        <input type="number" name="idade" id="idade" placeholder="Idade">
     </section>
 
     <section>
-        <p><em>&lt; &gt;</em></p>
+        <p><em>&lt;input type="checkbox"&gt;</em> Seleçao de Multiplas opcoes</p>
+        <label for="check">CheckBox</label><br>
+        <input type="checkbox" name="check" id="check"> Manga<br>
+        <input type="checkbox" name="check" id="check"> Abacate<br>
+        <input type="checkbox" name="check" id="check"> Maçã<br>
+        <input type="checkbox" name="check" id="check"> Laranja<br>
     </section>
 
     <section>
-        <p><em>&lt; &gt;</em></p>
+        <p><em>&lt;input type="radio"&gt;</em> Aceita apenas 1 opcao</p>
+        <label for="radio">Melancia</label>
+        <input type="radio" name="radio" id="radio">
+
+        <label for="radio">Cerveja</label>
+        <input type="radio" name="radio" id="radio">
+
+        <label for="radio">Cachaça</label>
+        <input type="radio" name="radio" id="radio">
+    </section>
+
+    <section>
+        <p><em>&lt;input type="button"&gt;</em> Utilização de Botoes</p>
+        <label for="botao">Botao</label><br>
+        <input type="button" value="" name="botao" id="botao" style="width: 70px;"><br>
+        <button>Botao com Button</button>
+    </section>
+
+    <section>
+        <p><em>&lt;input type="submit"&gt;</em> Botao para envio de formulario</p>
+        <label for="submit">Submit Enviar</label><br>
+        <input type="submit" value="" id="submit" name="submit">
+    </section>
+
+    <section>
+        <p><em>&lt;input type="reset"&gt;</em> Botao para reseta/limpa o formulario</p>
+        <label for="limpa">Limpa o Formulario</label><br>
+        <input type="reset" value="" id="limpa" name="limpa">
+    </section>
+
+    <section>
+        <p><em>&lt;input type="image"&gt;</em> Envio de formulario com uma imagen no botao</p>
+        <label for="envia">IMG Envia</label>
+        <input type="image" src="19362653.jpg" alt="">
+    </section>
+
+    <section>
+        <p><em>&lt;input type="text" list="nomes"&gt; &lt;datalist&gt;</em> Input Datalist</p>
+        <label for="nom">Estados-Cidades:</label><br>
+        <input type="text" id="nom" list="nomes" placeholder="Selecione o Estado/Cidade"><br>
+        <datalist id="nomes">
+            <option value="Campinas">Campinas</option>
+            <option value="Sao Paulo">Sao Paulo</option>
+            <option value="Teresina">Teresina</option>
+            <option value="Maranhao">Maranhao</option>
+        </datalist>
+    </section>
+
+    <section>
+        <p><em>&lt;textarea&gt;</em> Textarea, area de textos</p>
+        <label for="textarea">Digite a mensagem</label><br>
+        <textarea name="" id="textarea" placeholder="Digite sua mensagem"
+        required minlength="10" maxlength="200" row="20" cols="50"
+        wrap="soft" dir="rtl" spellcheck="on" autofocus></textarea>
+    </section>
+
+    <section>
+        <p><em>&lt;select&gt;</em> Multiplas opcoes para seleciona</p>
+        <label for="selecinone">Selecione o carro</label>
+        <select name="select" id="selecinone"
+                >
+            <option value="" selected>--Selecione--</option>
+            <option value="Fiat">Toro</option>
+            <option value="Fiat">Uno</option>
+            <option value="Fiat">Way</option>
+            <option value="Fiat">Cronos</option>
+            <option value="Fiat">Mobi</option>
+        </select>
     </section>
 
     <section>
