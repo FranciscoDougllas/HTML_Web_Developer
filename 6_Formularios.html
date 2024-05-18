@@ -352,21 +352,83 @@
     </section>
 
     <section>
-        <p><em>&lt; &gt;</em></p>
+        <p><em>&lt;optgroup&gt;</em> Agrupa opções dentro do select</p>
+        <select name="selec" id="selec">
+            <option value="Selecione">--Selecione--</option>
+            <optgroup label="Audi">
+                <option value="1.6">1.6</option>
+                <option value="Preto">Preto</option>
+                <option value="Gasolina">Gasolina</option>
+            </optgroup>
+
+            <optgroup label="Fiat">
+                <option value="Strada">Strada</option>
+                <option value="1.6">1.6</option>
+                <option value="Branco">Branco</option>
+            </optgroup>
+
+            <optgroup label="Hilux">
+                <option value="2.4">2.4</option>
+                <option value="4x4">4x4</option>
+                <option value="Prata">Prata</option>
+            </optgroup>
+        </select>
     </section>
 
     <section>
-        <p><em>&lt; &gt;</em></p>
+        <p><em>&lt;fieldset&gt; & &lt;legend&gt;</em></p>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome:</label><br>
+            <input type="text"><br>
+            <label for="idade">Idade</label><br>
+            <input type="number" name="" id="">
+        </fieldset>
     </section>
 
     <section>
-        <p><em>&lt; &gt;</em></p>
+        <p><em>&lt;button&gt;</em> Botao</p>
+        <form action="envia">
+            <button type="button" id="btn" name="btn">Envia Dados</button>
+        </form>
+        
     </section>
 
     <section>
-        <p><em>&lt; &gt;</em></p>
+        <p><em>&lt;output&gt;</em></p>
+        <form action="" oninput="resultado.value = parseInt(numeroA.value)  + parseInt(numeroB.value)  + parseInt(numeroC.value) ">
+            <input type="number" name="0" id="numeroA">
+            <p>+</p>
+            <input type="number" name="0" id="numeroB">
+            <p>+</p>
+            <input type="number" name="0" id="numeroC">
+            <p>=</p>
+            <output name="resultado"
+                    id="resultado"
+                    for="numeroA numeroB numeroC">
+            </output>
+        </form>
     </section>
 
+    <section>
+        <p><em>&lt;form&gt;</em> Tag de Formularios</p>
+        <form action="https://sitedainternet.com"
+            id="formCadastro"
+            name="formCadastro"
+            autocomplete="on"
+            method="get"
+            target="_self"
+            accept-charset="UTF-8"
+            enctype="multipart/form-data">
+            <input type="text" name="nome" id="nome" placeholder="Nome"><br>
+            <input type="email" name="email" id="email" placeholder="Email"><br>
+            <input type="file" name="" id=""><br>
+            <button type="submit" 
+                style="width: 220px; 
+                height: 30px;
+                color: #0e136a;">Enviar</button>
+        </form>
+    </section>
 
     <footer>
         &copy; 05/2024 Elementos de Formularios do HTML
