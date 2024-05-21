@@ -85,37 +85,33 @@
     <div class="imagem"><p>&lt;/&gt;</p></div>
   
     <section>
-        <p><em>&lt; &gt;</em><b>: </b> </p>
+        <p><em>&lt;script&gt;</em><b>: Scripts de programação (JavaScript)</b></p>
+        <div id="texto">Teste com JavaScript</div>
+        <button id="btn">Altera a Cor</button>
+
+        <script>
+            let texto = document.getElementById('texto');
+            let btn = document.getElementById('btn');
+
+            btn.addEventListener('click', function(){
+                texto.style.backgroundColor = 'red';
+                texto.style.padding = '40px';
+            })
+        </script>
     </section>
 
     <section>
-        <p><em>&lt; &gt;</em><b>: </b> </p>
+        <p><em>&lt;noscript&gt;</em><b>: Alternativa ao script</b> </p>
+        <noscript>
+            <p>JavaScript Desabilitado ou não suportado no navegador</p>
+        </noscript>
     </section>
 
     <section>
-        <p><em>&lt; &gt;</em><b>: </b> </p>
+        <p><em>&lt;embed&gt;</em><b>: Imcorpora conteudo externo ao <html></html></b> Melhor nem utilizala numca pois deixa o site vulneravel a Hackers</p>
+        <embed src="imgs/1.jpg" type="image/jpg" width="220px"
+        height="120px">
     </section>
-
-    <section>
-        <p><em>&lt; &gt;</em><b>: </b> </p>
-    </section>
-
-    <section>
-        <p><em>&lt; &gt;</em><b>: </b> </p>
-    </section>
-
-    <section>
-        <p><em>&lt; &gt;</em><b>: </b> </p>
-    </section>
-
-    <section>
-        <p><em>&lt; &gt;</em><b>: </b> </p>
-    </section>
-
-    <section>
-        <p><em>&lt; &gt;</em><b>: </b> </p>
-    </section>
-
 
     <footer>
         &copy; 05/2024 Elementos de Programação do HTML
